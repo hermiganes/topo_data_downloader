@@ -77,10 +77,6 @@ class INEGI_API:
         return None
 
     def download_dem(self, clave, tipo, ext, folder_output):
-        #clave = datos_dem["clave"]
-        #tipo = datos_dem["tipo"]
-        #ext = datos_dem["ext"]
-        #folder_output = datos_dem["folder"]
 
         salida = self.get_upc(clave)
         
