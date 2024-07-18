@@ -1,5 +1,5 @@
 # TopoDataDowloader 
-#### Cuando necesitas descargar una gran cantidad de Modelos Digitales de Elevación (DEM) a escala 1:10,000 desde la página de [INEGI](https://www.inegi.org.mx/), especialmente para procesos hidrológicos, puede ser una tarea que consume mucho tiempo. Este proyecto es un primer paso hacia la automatización de este proceso. 
+#### Cuando necesitas descargar una gran cantidad de Modelos Digitales de Elevación (DEM) a escala 1:10,000 desde la página de [INEGI](https://www.inegi.org.mx/), como en procesos hidrológicos, puede ser una tarea que consume mucho tiempo. Este proyecto es un primer paso hacia la automatización de este proceso. 
 Actualmente, esta implementación solo abarca la escala 1:10,000; más adelante se agregarán otras escalas.
 
 ## Funcionamiento 
