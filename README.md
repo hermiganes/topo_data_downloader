@@ -107,7 +107,7 @@ pipenv shell  # Activa el entorno virtual
 ## Ejemplo de Aplicación 
 Dentro de este mismo repositorio se encuentra un Jupyter Notebook llamado [example.ipynb](https://github.com/hermiganes/topo_data_downloader/blob/main/example.ipynb), el cual muestra un ejemplo de aplicación para descargar los DEMs de la CDMX.
 
-En resumen, el proceso incluye la intersección del shape de la CDMX con el shape de las cartas 1:10,000, disponible en [div10k](https://github.com/hermiganes/topo_data_downloader/tree/main/inputs), seguido de la descarga de los DEMs.
+El proceso incluye la intersección del shape de la CDMX con el shape de las cartas 1:10,000, disponible en [div10k](https://github.com/hermiganes/topo_data_downloader/tree/main/inputs), seguido de la descarga de los DEMs.
 
 
 
