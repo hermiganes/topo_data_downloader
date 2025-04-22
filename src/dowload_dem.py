@@ -45,7 +45,10 @@ class INEGI_API:
             response = requests.post(url, headers=self.headers, json=payload)         
             if response.status_code == 200:
                 result = response.json()
-                return result
+                if result.get('success'):
+                    return result
+                else:
+                    raise Exception(f"Carta {clave} - {result.get('message', 'Error')}")
             else:
                 raise Exception(f"Carta {clave} - Problema en la solicitud - Código de estado: {response.status_code}")
         except Exception as e:
@@ -170,6 +173,8 @@ class ProcesadorCartas ():
         df_ = pd.DataFrame()
         for clave in self.cartas:
             respuesta = self.api.get_upc(clave)
+            if respuesta == None:
+                continue
             df = pd.json_normalize(respuesta['list']['mapas'], record_path='formatos', meta=['key', 'titulo', 'entidad', 'url', 'edicion', 'escala', 'clave_carta', 'datum', 'iin', 'af'])
             column_order = [
                 'key', 'titulo', 'entidad', 'url', 'edicion', 'af', 'escala', 'clave_carta', 'datum', 'iin', 
